@@ -8,8 +8,11 @@
 **/models/*.pt
 **/models/*.pth
 
-# Output files (submissions, predictions)
-**/outputs/*.csv
+# Output files - only ignore experimental outputs
+**/outputs/*_exp.csv
+**/outputs/*_test.csv
+**/outputs/*_temp.csv
+**/outputs/*_draft.csv
 **/outputs/*.json
 
 # Jupyter notebook checkpoints

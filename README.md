@@ -14,13 +14,13 @@ datathon-playground-2026/
 ├── ghani/                          # Workspace Ghani
 │   ├── baseline_solution.ipynb     # Notebook utama Ghani
 │   ├── experiments/                # Catatan eksperimen pribadi (GITIGNORED)
-│   ├── outputs/                    # File submission/output (GITIGNORED)
+│   ├── outputs/                    # File submission/output (submission penting DI-TRACK, eksperimen GITIGNORED)
 │   └── models/                     # Model yang disimpan (GITIGNORED)
 │
 └── pitri/                          # Workspace Pitri
     ├── baseline_solution.ipynb     # Notebook utama Pitri (BUAT SENDIRI)
     ├── experiments/                # Catatan eksperimen pribadi (GITIGNORED)
-    ├── outputs/                    # File submission/output (GITIGNORED)
+    ├── outputs/                    # File submission/output (submission penting DI-TRACK, eksperimen GITIGNORED)
     └── models/                     # Model yang disimpan (GITIGNORED)
 ```
 
@@ -57,13 +57,16 @@ submission.to_csv('outputs/submission.csv', index=False)
 - `data/*.csv` - Data shared
 - `ghani/baseline_solution.ipynb` - Notebook Ghani
 - `pitri/baseline_solution.ipynb` - Notebook Pitri (setelah dibuat)
+- `ghani/outputs/submission_*.csv` - Submission penting Ghani (kecuali _exp, _test, _temp, _draft)
+- `pitri/outputs/submission_*.csv` - Submission penting Pitri (kecuali _exp, _test, _temp, _draft)
 - `.gitignore` - Aturan ignore
 - `README.md` - Dokumentasi
 
 ### File yang TIDAK DI-TRACK (GITIGNORED):
 - `**/catboost_info/` - File generated CatBoost
 - `**/models/*.pkl, *.joblib, *.h5, *.pt, *.pth` - Model files
-- `**/outputs/*.csv, *.json` - Output files
+- `**/outputs/*_exp.csv, *_test.csv, *_temp.csv, *_draft.csv` - Output eksperimen
+- `**/outputs/*.json` - Output JSON
 - `**/experiments/` - Catatan eksperimen pribadi
 - `.ipynb_checkpoints/` - Jupyter checkpoints
 - `__pycache__/` - Python cache
@@ -113,7 +116,10 @@ git pull origin main
 2. **Data shared**: Folder `data/` adalah shared resource, jangan dihapus atau di-rename
 3. **Output terpisah**: Setiap orang punya folder `outputs/` sendiri untuk submission
 4. **Eksperimen pribadi**: Gunakan folder `experiments/` untuk catatan pribadi, tidak akan di-track di Git
-5. **Communication**: Jika ada perubahan besar di struktur folder, diskusikan dulu
+5. **Naming convention untuk output**:
+   - Gunakan nama seperti `submission_final.csv`, `submission_v1.csv` untuk file yang ingin di-share
+   - Gunakan suffix `_exp`, `_test`, `_temp`, `_draft` untuk eksperimen yang tidak ingin di-track
+6. **Communication**: Jika ada perubahan besar di struktur folder, diskusikan dulu
 
 ## 📌 Catatan Penting untuk Pitri
 
