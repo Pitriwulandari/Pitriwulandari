@@ -1,0 +1,32 @@
+# CatBoost generated files
+**/catboost_info/
+
+# Model files (generated during training)
+**/models/*.pkl
+**/models/*.joblib
+**/models/*.h5
+**/models/*.pt
+**/models/*.pth
+
+# Output files (submissions, predictions)
+**/outputs/*.csv
+**/outputs/*.json
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
