@@ -134,10 +134,7 @@ Folder ini adalah tempat kerja pribadimu, jadi bebas bereksperimen di sini!
 
 ## 🏆 Target
 
-- **Baseline**: ~49% accuracy
-- **Target Short-term**: 55-57%
-- **Target Medium-term**: 58-62%
-- **Target Long-term**: 62-65%
+- **Target**: 70-80% accuracy
 
 ## 📞 Kontak
 
