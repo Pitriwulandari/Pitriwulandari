@@ -36,3 +36,10 @@ Thumbs.db
 
 # Personal experiment files
 **/experiments/
+
+# ── Lomba: data besar tidak masuk GitHub ──────────────────────────────────────
+**/lomba/**/data/
+**/*.npy
+**/*.zip
+# Submission CSV lomba (besar, >50MB)
+**/lomba/**/submission_*.csv

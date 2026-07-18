@@ -57,11 +57,26 @@
 - **Gap**: 15.47-25.47 poin
 
 ## Next Steps untuk Mencapai 70-80%:
-1. Deep Learning dengan TensorFlow/PyTorch (CNN/RNN untuk time-series)
-2. Hyperparameter optimization dengan Optuna (more extensive)
-3. Cross-validation dengan berbagai strategies (TimeSeriesSplit, GroupKFold)
-4. Data augmentation techniques (SMOTE variants, ADASYN)
-5. Meta-learning / stacking dengan lebih banyak base learners
-6. Feature importance analysis untuk remove noisy features
-7. Target encoding untuk categorical features
-8. Time-series specific models (Prophet, ARIMA-based features)
+1. ✅ Deep Learning dengan TensorFlow/Keras (Dense Neural Network)
+2. ✅ Hyperparameter optimization dengan Optuna (CatBoost & LightGBM)
+3. ✅ Time-series specific models (LSTM/GRU untuk nilai & aktivitas)
+4. ✅ Data augmentation techniques (SMOTE variants, ADASYN, BorderlineSMOTE, SVMSMOTE, SMOTETomek, SMOTEENN)
+5. ✅ Advanced stacking dengan meta-learners (LogisticRegression, RidgeClassifier, RandomForest, GradientBoosting, SVC, KNN)
+6. ✅ Feature importance analysis untuk remove noisy features
+7. ⏳ Target encoding untuk categorical features (pending)
+8. ⏳ Time-series specific models (Prophet, ARIMA-based features) (pending)
+
+## Expected Improvement dengan New Techniques:
+- Deep Learning (DNN): +2-4%
+- Optuna Optimization: +1-3%
+- LSTM/GRU Time-Series: +2-4%
+- Advanced Data Augmentation: +1-2%
+- Advanced Stacking: +2-3%
+- Feature Importance: +0.5-1%
+- **Total Expected Improvement**: +8.5-17%
+- **Expected Final Accuracy**: 63-71.5%
+
+## Status:
+- Notebook sudah diupdate dengan 6 teknik advanced baru
+- Siap untuk di-run di Google Colab
+- Final submission akan menggunakan blending dari 4 best models (CatBoost, LightGBM, XGBoost, Random Forest)
